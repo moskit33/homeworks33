@@ -1,0 +1,224 @@
+body{
+    font-family: "Myriad Pro", helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    background: #ededed;
+    line-height: 1.3;
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+/*header**/
+.header {
+    background: #474747;
+    padding: 28px 0 24px;
+    color: #c6c6c6;
+    margin-top: 108px;
+    position: relative;
+}
+.header .title {
+    padding: 0 10px;
+}
+.header .title h2 {
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 2.0;
+}
+.data-block {
+    background: #2f549b url(../uploads/header-icon.png) 55px 42px no-repeat;
+    position: relative;
+    display: block;
+    top: 0px;
+    right: 0;
+    padding: 32px 7px 32px 142px;
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(19, 19, 19, 0.55);
+    -moz-box-shadow:    0px 2px 9px 0px rgba(19, 19, 19, 0.55);
+    box-shadow:         0px 2px 9px 0px rgba(19, 19, 19, 0.55);
+}
+.numbers {
+    font-size: 72px;
+    color: #fff;
+}
+.numbers-title {
+    font-size: 25px;
+    color: #c6c6c6;
+}
+/**content**/
+.content-block {
+    margin-top: 75px;
+
+}
+.content-wrap {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.col {
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 127px 20px 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(19, 19, 19, 0.25);
+    -moz-box-shadow:    0px 1px 1px 0px rgba(19, 19, 19, 0.25);
+    box-shadow:         0px 1px 1px 0px rgba(19, 19, 19, 0.25);
+}
+.col-1 {
+    background: #fff url(../uploads/content-icon1.png) 73px 25px no-repeat;
+}
+.col-2 {
+    background: #fff url(../uploads/content-icon2.png) 69px 21px no-repeat;
+}
+.col-3 {
+    background: #fff url(../uploads/content-icon3.png) 61px 32px no-repeat;
+}
+.col-4 {
+    background: #fff url(../uploads/content-icon4.png) 66px 34px no-repeat;
+}
+.col h3 {
+    color: #2f549b;
+    font-size: 36px;
+    font-weight: 300;
+}
+.col h4 {
+    color: #2f549b;
+    font-weight: 400;
+    position: relative;
+}
+.col h4::after {
+    content: '';
+    width: 90px;
+    border-bottom: 1px solid #e5e5e5;
+    position: absolute;
+    top: 54px;
+    left: 56px;
+}
+.col p {
+    color: #5e5e5e;
+    padding-top: 40px;
+}
+.col a {
+    color: #c6c6c6;
+    padding-top: 36px;
+    text-decoration: underline;
+}
+.col:hover {
+    background-color: #2f549b;
+}
+.col:hover h3,
+.col:hover h4,
+.col:hover a{
+    color: #fff;
+}
+.col:hover p {
+    color: #7c9cdb;
+}
+
+
+
+
+
+
+
+/**Footer**/
+.footer {
+    margin-top: 83px;
+    position: relative;
+    padding: 10px 0;
+
+}
+.footer-title {
+    position: absolute;
+    top: -36px;
+    left: 20%;
+    background: #2f549b;
+    padding: 10px 18px;
+    z-index: 999;
+
+}
+.footer-title::before {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: -29px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 29px 23px 0;
+    border-color: transparent #1f3560 transparent transparent;
+}
+.footer-title::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    right: -29px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 23px 29px 0 0;
+    border-color: #1f3560 transparent transparent transparent;
+}
+.footer-title h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400;
+}
+.footer-wrap {
+    color: #5e5e5e;
+    font-size: 14px;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    background: #c6c6c6;
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(19, 19, 19, 0.25);
+    -moz-box-shadow:    inset 0px 2px 2px 0px rgba(19, 19, 19, 0.25);
+    box-shadow:         inset 0px 2px 2px 0px rgba(19, 19, 19, 0.25);
+}
+.footer-col {
+    width: 140px;
+    text-align: center;
+    padding-top: 80px;
+}
+.footer-wrap i {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: url(../uploads/footer-sprite.png) 0 0 no-repeat;
+}
+
+
+@media screen and (min-width: 920px){
+    .data-block {
+        background: #2f549b url(../uploads/header-icon.png) 55px 42px no-repeat;
+        position: absolute;
+        top: -38px;
+        right: 0;
+        padding: 32px 7px 32px 142px;
+    }
+    .footer-title {
+        position: absolute;
+        top: -36px;
+        left: 40.5%;
+        background: #2f549b;
+        padding: 10px 18px;
+        z-index: 999;
+
+    }
+    .header .title {
+        box-sizing: border-box;
+        padding: 0 510px 0 10px;
+    }
+}
+
+
